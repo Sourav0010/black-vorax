@@ -21,8 +21,8 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       lang="en"
       className={cn('h-full', 'antialiased', `${jetbrainsMono.variable}`)}
     >
-      <body className="min-h-full flex flex-col items-center justify-center typeset typeset-docs">
-        <div className="typeset typeset-docs max-w-[37em]">{children}</div>
+      <body className="min-h-full w-full flex flex-col typeset typeset-docs">
+        <div className="typeset typeset-docs">{children}</div>
       </body>
     </html>
   );
